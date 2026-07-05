@@ -1,0 +1,118 @@
+/* ============ SERVICES SECTION ============ */
+.services-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.services-section .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services-section .section-title h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+.services-section .section-title h2 span {
+    color: #e94560;
+}
+
+.services-section .section-title p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Service Box */
+.service-box {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 20px;
+    background: #f8f9fa;
+    transition: all 0.4s ease;
+    margin-bottom: 30px;
+    height: 100%;
+    border: 2px solid transparent;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #e94560;
+    background: #fff;
+}
+
+/* Service Icon */
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #e94560 0%, #c23a51 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: all 0.4s ease;
+}
+
+.service-box:hover .service-icon {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* Service Title */
+.service-box h4 {
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* Service Description */
+.service-box p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 991px) {
+    .services-section {
+        padding: 60px 0;
+    }
+    
+    .services-section .section-title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .service-box {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-section {
+        padding: 50px 0;
+    }
+    
+    .services-section .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .service-icon i {
+        font-size: 1.5rem;
+    }
+}

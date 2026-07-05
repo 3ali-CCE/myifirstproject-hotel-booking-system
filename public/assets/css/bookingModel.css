@@ -1,0 +1,211 @@
+/* MODAL BASE */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-small {
+    max-width: 450px;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 35px;
+    color: #999;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.close-btn:hover {
+    color: #e94560;
+}
+
+/* MODAL BODY */
+.modal-body {
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.modal-left {
+    flex: 1;
+}
+
+.modal-right {
+    width: 280px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* ROOM IMAGE */
+.room-main-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.room-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DETAILS INFO */
+.details-info h3 {
+    color: #1a1a2e;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.details-info p {
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.details-features {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.details-features span {
+    color: #555;
+}
+
+.details-features .price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #27ae60;
+}
+
+.description-section h4 {
+    color: #1a1a2e;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.description-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ACTION BOX */
+.action-box {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.action-box h3 {
+    color: #1a1a2e;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.action-box p {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.btn-book-action {
+    width: 100%;
+    background: linear-gradient(135deg, #27ae60, #1e8449);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-book-action:hover {
+    transform: translateY(-2px);
+}
+
+/* LOGIN MODAL */
+.modal-body-login {
+    text-align: center;
+    padding: 40px;
+}
+
+.login-icon {
+    font-size: 4rem;
+    color: #e94560;
+    margin-bottom: 20px;
+}
+
+.modal-body-login h3 {
+    color: #1a1a2e;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.modal-body-login p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.btn-register {
+    display: inline-block;
+    width: 100%;
+    background: linear-gradient(135deg, #e94560, #d6304a);
+    color: #fff;
+    padding: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.btn-register:hover {
+    transform: translateY(-2px);
+}
+
+.login-footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.login-footer a {
+    color: #e94560;
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .modal-body {
+        flex-direction: column;
+    }
+    .modal-right {
+        width: 100%;
+    }
+}

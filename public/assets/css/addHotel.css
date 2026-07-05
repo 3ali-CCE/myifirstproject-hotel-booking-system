@@ -1,0 +1,208 @@
+/* ============ ADD HOTEL CSS ============ */
+
+.admin-navbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.admin-content {
+    padding: 15px 30px 30px;
+    background: #f5f7fa;
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+    color: #1a1a2e;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.page-header h1 i {
+    color: #e94560;
+}
+
+.page-header p {
+    color: #7f8c8d;
+}
+
+/* Container - Side by Side */
+.forms-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Cards */
+.form-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    flex: 1;
+    max-width: 500px;
+}
+
+.form-card h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f2f5;
+    display: flex;
+    align-items: center;
+}
+
+.form-card h3 i {
+    color: #e94560;
+    margin-right: 10px;
+}
+
+/* Form Groups - Compact */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    color: #34495e;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #e8ecef;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
+    background: #f9fbfc;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #e94560;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(233, 69, 96, 0.1);
+}
+
+.form-control::placeholder {
+    color: #bdc3c7;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 70px;
+}
+
+.form-control[readonly] {
+    background: #ecf0f1;
+    color: #7f8c8d;
+}
+
+/* Select */
+.form-control select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 35px;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    gap: 12px;
+    padding-top: 18px;
+    border-top: 1px solid #eee;
+}
+
+/* Buttons */
+.btn-submit {
+    background: linear-gradient(135deg, #e94560 0%, #d6304a 100%);
+    border: none;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(233, 69, 96, 0.4);
+    color: #fff;
+}
+
+.btn-submit i {
+    margin-right: 6px;
+}
+
+.btn-cancel {
+    background: transparent;
+    border: 2px solid #dfe6e9;
+    color: #636e72;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    flex: 1;
+    text-align: center;
+}
+
+.btn-cancel:hover {
+    border-color: #e94560;
+    color: #e94560;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .admin-content {
+        margin-left: 70px;
+        padding: 90px 20px 20px;
+    }
+
+    .forms-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .admin-content {
+        margin-left: 0;
+        padding: 85px 15px 15px;
+    }
+
+    .form-card {
+        padding: 25px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+}
